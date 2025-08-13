@@ -24,6 +24,7 @@ a{
 }
 .add:hover{
   opacity: 0.8;
+  cursor: pointer;
 }
 .added{
   height: 60vh;
@@ -112,12 +113,14 @@ a{
   grid-template-columns: 1fr 1fr 1fr 1fr;
   height: 30vh;
   align-items: center;
+  padding-left: 5rem;
 }
 .error{
   display: none;
   text-align: center;
   position: relative;
   top: 1%;
+  color: rgb(138, 45, 45);
 }
 .extra{
   font-size: 130%;
@@ -246,6 +249,7 @@ nav{
 }
 .remove:hover{
   opacity: 0.8;
+  cursor: pointer;
 }
 .right{
   text-align: right;
@@ -260,6 +264,7 @@ nav{
 }
 .success{
   display: none;
+  color: rgb(44, 135, 44);
 }
 .take{
   display: grid;

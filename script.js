@@ -108,8 +108,12 @@ function sendEmail() {
     .then((res) => {
       document.getElementById("name").value = "";
       document.getElementById("email").value = "";
-      console.log(res);
-      alert("message sent successfully");
+      document.querySelector(".success").style.display = "block";
+      document.querySelector(".error").style.display = "none";
     })
-    .catch((err) => console.log(err));
+    .catch((err) => {
+      console.error("Failed to send email:", err);
+      document.querySelector(".error").style.display = "block";
+      document.querySelector(".success").style.display = "none";
+    });
 }
